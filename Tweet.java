@@ -39,7 +39,7 @@ public class Tweet {
 
     /**
      * Constructs a new Tweet object with the following attributes:
-     * 
+     *
      * @param userHandle        The userHandle of the tweet's author
      * @param caption           The caption associated with the tweet
      * @param likes             The number of likes the tweet has received
@@ -97,12 +97,17 @@ public class Tweet {
     /**
      * Return the date the tweet was created at in the format (dd/mm/yyyy)
      * 
-     * @returns the creation date
+     * @return the creation date
      */
     public String getCreatedAt() {
         return createdAtDay + "/" + createdAtMonth + "/" + createdAtYear;
     }
 
+    /**
+     * Updates the amount of likes of the tweet
+     * 
+     * @param newLikes the new amount of likes
+     */
     public void setLikes(int newLikes) {
     	this.likes = newLikes;
     }
